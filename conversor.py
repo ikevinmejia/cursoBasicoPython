@@ -1,4 +1,12 @@
-#COP vs USD
+#Conversor de monedas usando funciones
+
+def conversor(tipo_pesos, valor_dolar):
+    pesos = float(input("¿Cuántos pesos " + tipo_pesos +" tienes?: "))
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+
 menu = """
 Bienvenido al conversor de monedas. 💰
 
@@ -11,29 +19,14 @@ Elige una opción: """
 opcion = int(input(menu))
 
 if opcion == 1:
-    pesos = float(input("¿Cuántos pesos colombianos tienes?: "))
-    valor_dolar = 3875
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares + " dólares")
+    conversor("colombianos", 3875)
 elif opcion == 2:
-    pesos = float(input("¿Cuántos pesos argentinos tienes?: "))
-    valor_dolar = 65
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares + " dólares")
+    conversor("argentinos", 65)
 elif opcion == 3:
-    pesos = float(input("¿Cuántos pesos mexicanos tienes?: "))
-    valor_dolar = 24
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares + " dólares")
+    conversor("mexicanos", 24)
 else:
     print("Escoge una opción correcta, por favor.")
-    
+
 #USD vs COP
 
 """ usd = int(input("USD a cambiar: "))
