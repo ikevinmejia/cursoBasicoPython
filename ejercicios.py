@@ -1,12 +1,97 @@
 #Ejercicios funciones
-nombre = str(input("¿Cuál es tu nombre?: "))
+"""
+def titulo_subrayado (titulo, caracter = "*"):
+    print(titulo)
+    print(caracter*len(titulo))
+
+titulo_subrayado("Sistema de Admin")
+titulo_subrayado("Ventas", "-") """
+
+""" def function(valor, iva = 21):
+    return valor + valor * iva/100
+print(function(30000, 10))
+print(function(30000)) """
+
+""" def carga_lista():
+    li = []
+    for i in range (5):
+        valor = int(input("Ingrese valor: "))
+        li.append(valor)
+    return li
+def imprimir_mayor10(li):
+    print("Elementos de la lista mayores a 10")
+    for i in range (len(li)):
+        if li [i]>10:
+            print(li[i])
+
+lista=carga_lista()
+imprimir_mayor10(lista) """
+
+
+""" nombre = str(input("¿Cuál es tu nombre?: "))
 
 def function():
     print("¡Hola " + nombre + "!")
 
-function()
+function() """
+
+#Bucles
+
+""" word = str(input("Escribe una palabra: "))
+
+for i in range(0, 10):
+    print(word) """
+
+""" birthday = int(input("¿Cuál es tu edad?: "))
+ed = 0
+
+for i in range(birthday):
+    ed += 1
+    print("Haz cumplido:", ed) """
+
+""" number = int(input("Escribe un número: "))
+for i in range(1,number, 2):
+    print(i, end=", ") """
+
+""" number = int(input("Escribe un número: "))
+for i in range(number, -1, -1):
+    print(i, end=", ") """
+
+""" invest = float(input("¿Cuánto desea invertir?: "))
+interest = float(input("¿A qué tasa de interes?: "))
+years =  int(input("¿A cuántos años?: "))
+count=0
+for i in range(years):
+    count += 1
+    invest *= 1 + interest/100
+    print("Su dinero acomulado anualmente es: " + str(round(invest,2))) """
+
+
+""" number = int(input("Pon un número: "))
+
+for i in range(number):
+    for j in range(i + 1):
+        print("*", end="")
+    print("")
+
+for i in range(number):
+    print("*" * (i + 1)) """
+
+""" for i in range (1, 11):
+    for j in range (1, 11):
+        print(i*j, end="\t")
+    print("") """
+
+
 
 #Ejercicios condicionales
+
+""" cateto_a = float(input("Introduce el valor del cateto a: "))
+cateto_b = float(input("Introduce el valor del cateto b: "))
+import math
+h = round(math.sqrt((cateto_a**2)+(cateto_b**2)), 2)
+
+print(round(math.sqrt((cateto_a**2)+(cateto_b**2)), 2)) """
 
 """ edad = int(input("¿Cuál es tu edad?: "))
 
@@ -44,7 +129,7 @@ if text == "si":
         print(pizza + "pimiento " + ingredientes)
     elif menu_vegi != "pimiento":
         print(pizza + "tofu " + ingredientes)
-    else: 
+    else:
         print(error)
 elif text == "no":
     no_vegi = str(input(menu + "Peperoni, Jamón y Salmón ¿Cuál desea?: "))
@@ -58,20 +143,20 @@ elif text == "no":
         print(error)
 else:
     print(error) """
-    
+
 """ edad = int(input("¿Cuál es su edad?: "))
 ingreso = float (input("¿Cuántos son sus ingresos mensuales?: "))
 
 if edad > 16 and ingreso >= 1000:
     print("Este año debe tributar.")
-elif edad < 16 or ingreso < 1000: 
+elif edad < 16 or ingreso < 1000:
     print("Su edad o ingresos no lo hacen un ciudadano tributario")
-else: 
+else:
     print("Señor usuario, usted no debe tributar este año") """
 
 """ num1 = int(input("Introduce un número: "))
 num2 = int(input("Introduce un número: "))
-resultado = num1 % num2 
+resultado = num1 % num2
 if resultado == 0:
     print("Ha ocurrido un error")
 else:
@@ -87,7 +172,7 @@ else:
 """ edad =int(input("Escribe tu edad: "))
 if edad > 17:
     print("Eres mayor de edad")
-else: 
+else:
     print("Eres menor de edad") """
 
 """ numero = int(input("Escribe un número: "))
@@ -107,7 +192,7 @@ usd = round(usd, 2)
 usd = str(usd)
 print("El valor de USD en COP es: $" + usd) """
 
-#Ejercicios simples: 
+#Ejercicios simples:
 """ n = int(input("Escribe un número entero positivo: "))
 suma = (n*(n + 1))/(2)
 print("La suma de los primeros enteros de 1 hasta " + str(n) + " es: " + str(suma)) """
