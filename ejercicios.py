@@ -1,4 +1,12 @@
 #Ejercicios funciones
+
+# def suma(a,b):
+#     print("Se suman dos números: ")
+#     resultado = a + b
+#     return resultado
+
+# print(suma(1,5))
+
 """
 def titulo_subrayado (titulo, caracter = "*"):
     print(titulo)
